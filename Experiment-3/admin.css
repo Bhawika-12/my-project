@@ -1,0 +1,24 @@
+header{
+    border:1px solid black;
+    background-color: green;
+    grid-column: 1/span 2;
+}
+nav{
+    border:1px solid black;
+    background-color: grey;
+}
+main{
+    border:1px solid black;
+    background-color: aliceblue;
+}
+footer{
+    border:1px solid black;
+    background-color:green;
+    grid-column: 1/span 2;
+}
+body{
+    display:grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 50px auto 50px;
+    height: 100vh;
+}
