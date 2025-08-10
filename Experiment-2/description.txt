@@ -1,0 +1,1 @@
+In this experiement i made a Responsive Banking UI Page,with 3 containers and 2 buttons of Deposit and Withdraw. I added many Css properties to the inner and outer container selectors like padding , margin , background color etc. Then i linked this css file to my html file.
