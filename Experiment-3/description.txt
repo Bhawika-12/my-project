@@ -1,0 +1,1 @@
+In this experiment i made an Admin Dashboard, in which i used html and css . In html i used four tagsheader,footer,nav,main inside a div tag and that div tag is in body tag. Here i got to understand the concepts of class,tags ,id ,selector, selector properties,theme switiching and other concepts.
