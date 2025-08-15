@@ -1,1 +1,28 @@
-In this experiment i made a Live Character Counter in which Javascript was integrated along with the HTMLand CSS . In javascript , a function was made that was triggered when the event was happening (when the characters were typed , the count was changing . I used two attributes here textArea and charCount and those were involved in the textCount function in Javascript . I accesed their values using values.length .
+My Learnings :-
+
+Learned how to integrate JavaScript with HTML and CSS for interactive functionality.
+
+Understood how to use event listeners to trigger functions when a user types in a textarea.
+
+Practiced accessing DOM elements using getElementById and retrieving their values using .value.length.
+
+Improved my understanding of real-time content updates and how to dynamically modify HTML content.
+
+Learned how to manage UI responsiveness by instantly reflecting changes without reloading the page.
+
+Test Cases / Scenarios Covered During Presentation :-
+
+Typing Characters → The counter increases in real-time as each character is typed.
+
+Deleting Characters → The counter decreases immediately when characters are deleted.
+
+Empty Textarea → Counter displays 0 when no text is entered.
+
+Pasting Text → Counter updates instantly to show the number of pasted characters.
+
+Clearing Text → Counter resets to 0 when the textarea is cleared.
+
+Special Characters & Spaces → All characters, including spaces and symbols, are counted.
+
+Expected Output :- 
+A responsive textarea with a live character counter that updates instantly based on user input.
