@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background: #f7f7f7;
+}
+
+header h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 28px;
+    color: #222;
+}
+
+.category-box {
+    background: #fff;
+    border: 1px solid #333;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 25px auto;
+    max-width: 1000px;
+}
+
+.category-box h2 {
+    margin-bottom: 15px;
+    font-size: 20px;
+    color: #111;
+}
+
+.filter-section {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    justify-content: center;
+}
+
+.filter-section label {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+}
+
+select {
+    padding: 8px 14px;
+    font-size: 15px;
+    border: 1px solid #555;
+    border-radius: 6px;
+    outline: none;
+    cursor: pointer;
+    background: #fff;
+    transition: border 0.2s ease, box-shadow 0.2s ease;
+}
+
+select:hover, select:focus {
+    border-color: #007BFF;
+    box-shadow: 0 0 5px rgba(0,123,255,0.4);
+}
+
+/* Product Grid */
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 18px;
+    margin-top: 20px;
+}
+
+/* Product Card */
+.product {
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 16px;
+    color: #333;
+    text-align: center;
+    font-weight: 500;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+}
+
+.product:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    background: #fafafa;
+}

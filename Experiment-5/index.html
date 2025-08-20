@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Product Filter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Product Filter</h1>
+    </header>
+
+    <section class="filter-section">
+        <label for="category">Filter by Category:</label>
+        <select id="category">
+            <option value="all">All</option>
+            <option value="shoes">Shoes</option>
+            <option value="shirts">Shirts</option>
+            <option value="gadgets">Gadgets</option>
+        </select>
+    </section>
+
+    <section class="product-list" id="productList">
+        <div class="product" data-category="shoes">Nike Air Max</div>
+        <div class="product" data-category="shirts">Polo T-Shirt</div>
+        <div class="product" data-category="gadgets">Smart Watch</div>
+        <div class="product" data-category="shoes">Adidas Running Shoes</div>
+        <div class="product" data-category="gadgets">Bluetooth Speaker</div>
+        <div class="product" data-category="shirts">Formal Shirt</div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
