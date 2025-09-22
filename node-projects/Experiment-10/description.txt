@@ -1,0 +1,54 @@
+Project Description – CLI Employee Management System
+
+This project is a Command-Line Interface (CLI) Employee Management System built using Node.js and the readline module.
+It allows users to interact with the program through terminal-based menu options and manage employee records in memory.
+
+🔹 Features:
+
+Add Employee – User can enter the employee’s name and ID to store in the system.
+
+List Employees – Displays all the employees currently in the system.
+
+Remove Employee by ID – Removes an employee based on the ID entered by the user.
+
+Exit – Gracefully terminates the application.
+
+The system uses an in-memory array (employees[]) to store employee records, meaning data is lost once the program exits. It’s a simple but effective demonstration of CRUD (Create, Read, Delete) operations through a CLI interface.
+
+📘 Learnings from this Project
+
+Understanding CLI Applications in Node.js
+
+You learned how to build interactive terminal-based applications.
+
+Used the readline module for input/output handling.
+
+Working with Arrays for Data Management
+
+Storing employee records in an array.
+
+Using methods like push(), forEach(), findIndex(), and splice() for CRUD operations.
+
+Menu-driven Program Structure
+
+Implemented a looping menu with options to manage user interaction.
+
+Practiced switch-case logic for handling multiple options.
+
+User Interaction & Input Handling
+
+How to collect input step by step using rl.question().
+
+Validating and responding to user input with meaningful messages.
+
+Program Flow & Exit Handling
+
+Designing a smooth navigation flow (returning to menu after actions).
+
+Gracefully closing the program with rl.close().
+
+Practical Use of Asynchronous Callbacks
+
+Learned how Node.js handles asynchronous input.
+
+Managed nested callbacks while adding employees.
