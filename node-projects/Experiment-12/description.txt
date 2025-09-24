@@ -1,0 +1,72 @@
+Title: Concurrent Ticket Booking System with Seat Locking and Confirmation
+
+Objective:
+The objective of this experiment is to design and implement a ticket booking system in Node.js that can handle multiple concurrent seat reservation requests safely. This system demonstrates how to prevent race conditions using a seat locking mechanism, ensuring that seats are allocated reliably and without conflict.
+
+Description:
+In real-world ticket booking systems — such as for movies, events, or flights — multiple users often try to book seats at the same time. Without proper concurrency control, this can lead to race conditions where multiple users book the same seat.
+
+This experiment implements a Concurrent Ticket Booking System using Node.js and Express.js, with the following core features:
+
+Seat Availability Viewing:
+Users can view all available seats through a REST API endpoint.
+
+Seat Locking:
+When a user selects a seat, it is temporarily locked so no other user can book it until the lock is confirmed or expires. This prevents multiple bookings of the same seat.
+
+Seat Confirmation:
+After locking a seat, the user can confirm the booking within a specified time window. Once confirmed, the seat state is updated as booked.
+
+Lock Expiry:
+If the seat is not confirmed within the lock time (e.g., 1 minute), the lock automatically expires, and the seat becomes available again.
+
+Concurrent Testing:
+A separate test script is implemented to simulate concurrent booking requests to verify that the locking mechanism works correctly and avoids double bookings.
+
+Implementation:
+
+The server is implemented in Node.js using Express.js for API creation.
+
+In-memory storage (JavaScript objects) is used to store seat data for simplicity.
+
+Seat locking uses a timeout function to expire locks automatically.
+
+Endpoints implemented:
+
+GET /seats → View all seats
+
+POST /lock → Lock a seat for a user
+
+POST /confirm → Confirm the locked seat
+
+POST /release → Release the seat lock
+
+Testing Without Postman:
+The experiment is tested entirely through:
+
+Web browser for GET requests
+
+PowerShell (Invoke-WebRequest) or curl commands for POST, PUT, DELETE requests
+This eliminates the need for third-party API tools like Postman.
+
+Outcome:
+This experiment demonstrates how to:
+
+Handle concurrency in a real-time ticket booking system
+
+Implement a locking mechanism to prevent double booking
+
+Use REST APIs in Node.js for practical application
+
+Test APIs without external tools
+
+Applications:
+Such a system is applicable in:
+
+Cinema/movie ticket booking platforms
+
+Flight/train seat reservations
+
+Event booking systems
+
+Any system requiring concurrent access control for limited resources
